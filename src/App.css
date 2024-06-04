@@ -1,38 +1,204 @@
-.App {
-  text-align: center;
+.heading
+{
+    font-size: 3.5em;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.newnav{
+    background-color: black;
+    color: white;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.newnav a{
+    color: white;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.contentBtn{
+    width: 250px;
+    height: 3em;
+    font-size: 1.25em;
+    padding: 10;
 }
 
-.App-link {
-  color: #61dafb;
+.contentData{
+    background-color: black;
+    color: white;
+    font-size: 1.3em;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.terminology
+{
+    border: 3px solid black;
+    border-radius: 10px;
+}
+
+.title-data
+{
+    text-indent: 5em;
+    font-size: 1.5em;
+    font-weight: 300;
+}
+
+.acnbtn
+{
+    font-size: 0.65em;
+}
+
+.acnbdy
+{
+    background-color: black;
+    color:white;
+    font-size: 1.25em;
+    font-weight: 300;
+}
+
+.charles{
+    width: 50%;
+    height: 70%;
+}
+
+.aboutTitle{
+    margin-top: 1em;
+    font-weight: 700;
+    font-size: 1.7em;
+}
+
+.aboutContent p
+{
+    margin-top: 2px;
+    font-size: 1.25em;
+    font-weight: 500;
+    text-indent: 3em;
+}
+
+ul{
+    font-size: 1.25em;
+    font-weight: 500;
+}
+
+.etitle
+{
+    font-size: 4em;
+    font-weight: 500;
+}
+
+.textInput
+{
+    font-size: 1.5em;
+    padding: 20px;
+   border-bottom: 5px solid gray;
+   max-width: 512px;
+   font-weight: 400;
+}
+
+
+.form-label{
+    font-weight: 600;
+}
+
+button{
+    width: 100px;
+    height: 70px;
+    background-color: black;
+    color: white;
+    font-weight: 500;
+    font-size: 1.5em;
+    border-radius: 8px;
+}
+
+.output{
+    font-size: 1.5em;
+    padding: 20px;
+   /* border-bottom: 5px solid gray; */
+   max-width: 512px;
+    border: 10px solid gray;
+    font-weight: 700;
+}
+
+.process
+{
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+    width: 15em;
+    height: 3em;
+    font-size: 1.5em;
+    font-weight: bolder;
+}
+
+.box
+{
+    border: 1px solid black;
+    border-radius: 1em;
+    padding: 10px;
+    font-weight: 900;
+    font-size: 1em;
+    min-width: 200px;
+}
+
+.box h2{
+    font-size: 2em;
+    font-weight: 300;
+}
+
+.displayLetters
+{
+    font-size: 2em;
+    font-weight: 300;
+}
+
+.prev
+{
+    border: 1px solid black;
+    background-color: black;
+    color: white;
+    border-radius: 1em;
+    padding: 10px;
+    font-size: 1.5em;
+    position: absolute;
+    left: 0;
+}
+
+.next{
+    border: 1px solid black;
+    background-color: black;
+    color: white;
+    border-radius: 1em;
+    padding: 10px;
+    font-size: 1.5em;
+    position: absolute;
+    right: 0;
+}
+
+.cell
+{
+    margin: 10px;
+    border: 1px solid black;
+    padding: 5px;
+    font-size: 20px;
+    font-weight: 750;
+}
+
+.cellPlain
+{
+    margin: 10px;
+    background-color: lightcoral;
+    border: 1px solid black;
+    padding: 5px;
+    font-size: 20px;
+    font-weight: 750;
+}
+
+.cellEncrypt
+{
+    margin: 10px;
+    background-color: lightgreen;
+    border: 1px solid black;
+    padding: 5px;
+    font-size: 20px;
+    font-weight: 750;
+}
+
+.grid
+{
+    max-width: 300px;
 }
