@@ -1,12 +1,12 @@
 import React from "react";
 import Titles from "./Titles";
 import DisplayLetters from "./DisplayLetters";
-import InputRow from "./InputRow";
+import InputRowd from "./InputRowd";
 import { Grid, GridKey, fillGrid } from "./utils";
 import KeyGrid from "./KeyGrid";
 import { Link } from "react-router-dom";
 
-const FillGrid = (props) => {
+const FillDecrypt = (props) => {
   const entry = props.entry;
   const finalKey = Grid(entry.Key);
   const gridKey = GridKey(finalKey);
@@ -19,8 +19,8 @@ const FillGrid = (props) => {
 
   return (
     <div>
-      <Titles title="Encryption" />
-      <InputRow plainText={entry.plainText} Key={entry.Key} />
+      <Titles title="Decryption" />
+      <InputRowd cipherText={entry.cipherText} Key={entry.Key} />
       <div>
         <h3 className="m-4">STEP 3 : COMPLETING THE GRID</h3>
         <ul>
@@ -36,14 +36,14 @@ const FillGrid = (props) => {
         </div>
         <KeyGrid gridKey={finalGrid} seen={seen} />
       </div>
-      <Link className="btn m-2 next" to="/encrypt/split-text" role="button">
+      <Link className="btn m-2 next" to="/decrypt/split-text" role="button">
         Next
       </Link>
-      <Link className="btn m-2 prev" to="/encrypt/create-grid" role="button">
+      <Link className="btn m-2 prev" to="/decrypt/create-grid" role="button">
         Previous
       </Link>
     </div>
   );
 };
 
-export default FillGrid;
+export default FillDecrypt;

@@ -1,19 +1,19 @@
 import React from "react";
 import Titles from "./Titles";
-import InputRow from "./InputRow";
 import { Link } from "react-router-dom";
 import { Grid, GridKey } from "./utils";
 import KeyGrid from "./KeyGrid";
+import InputRowd from "./InputRowd";
 
-const CreateGrid = (props) => {
+const CreateGridd = (props) => {
   const entry = props.entry;
   const finalKey = Grid(entry.Key);
   const gridKey = GridKey(finalKey);
 
   return (
     <div>
-      <Titles title="Encryption" />
-      <InputRow plainText={entry.plainText} Key={entry.Key} />
+      <Titles title="Decryption" />
+      <InputRowd cipherText={entry.cipherText} Key={entry.Key} />
       <div>
         <h3 className="m-4">STEP 2 : CREATING GRID</h3>
         <ul>
@@ -24,12 +24,12 @@ const CreateGrid = (props) => {
         </ul>
         <KeyGrid gridKey={gridKey} />
       </div>
-      <Link className="btn m-2 next" to="/encrypt/fill-grid" role="button">
+      <Link className="btn m-2 next" to="/decrypt/fill-grid" role="button">
         Next
       </Link>
       <Link
         className="btn m-2 prev"
-        to="/encrypt/remove-duplicates"
+        to="/decrypt/remove-duplicates"
         role="button"
       >
         Previous
@@ -38,4 +38,4 @@ const CreateGrid = (props) => {
   );
 };
 
-export default CreateGrid;
+export default CreateGridd;

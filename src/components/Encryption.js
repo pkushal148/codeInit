@@ -4,20 +4,10 @@ import { Link } from "react-router-dom";
 import { encryptByPlayfairCipher } from "./utils";
 
 const Encryption = (props) => {
-  // const [entry, setEntry] = useState({
-  //   plainText: "",
-  //   Key: "",
-  //   cipherText: "",
-  // });
   const { entry, onChange, encrypt } = props;
-
-  // const onChange = (e) => {
-  //   setEntry({ ...entry, [e.target.name]: e.target.value });
-  // };
 
   const encryption = () => {
     let cText = encryptByPlayfairCipher(entry.plainText, entry.Key);
-    // setEntry({ ...entry, cipherText: cText });
     encrypt(cText);
   };
 
@@ -78,6 +68,7 @@ const Encryption = (props) => {
             className="btn mx-2 process"
             to="/encrypt/remove-duplicates"
             role="button"
+            onClick={encryption}
           >
             Show Encryption Process
           </Link>
