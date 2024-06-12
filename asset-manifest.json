@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/codeInit/static/css/main.9613c042.css",
+    "main.js": "/codeInit/static/js/main.fef015ae.js",
+    "index.html": "/codeInit/index.html",
+    "main.9613c042.css.map": "/codeInit/static/css/main.9613c042.css.map",
+    "main.fef015ae.js.map": "/codeInit/static/js/main.fef015ae.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9613c042.css",
+    "static/js/main.fef015ae.js"
+  ]
+}
